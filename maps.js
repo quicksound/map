@@ -8,6 +8,8 @@ var Map = {};
 
 Map.Instance = (function(){
 
+	var startPos(62.60827, 16.54541);
+
   	var image = new google.maps.MarkerImage('img/icons/MapsMarker.png',
 	new google.maps.Size(32, 32),
 		new google.maps.Point(0,0),
@@ -16,7 +18,7 @@ Map.Instance = (function(){
 				
 	return {			
 		initialize: function(element) {	
-			var startPos = new google.maps.LatLng(59.60827, 16.54541);
+			var startPos = new google.maps.LatLng(startPos);
 			
 			var mapOptions = {
 				zoom: 13,
